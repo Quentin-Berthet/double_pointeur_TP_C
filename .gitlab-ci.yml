@@ -1,0 +1,8 @@
+image: omalaspinas/archlinux-pandoc:latest
+
+test:
+  before_script:
+    - pacman -S --noconfirm wdiff
+
+  script:
+    - ./run_tests
